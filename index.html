@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+    
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/landing-m.webp">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="/css/local.css">
+    </noscript>
+
+    <title>Company Name | What They Do | Town and State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="/index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="/images/logo.png" decoding="async" alt="logo" width="221" height="66">
+
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="/images/logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+            </a>
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/index.html#servicesTwo">Charters</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!--Mobile Nav toggle-->
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="hero">
+            <div class="hero-content">
+                <div class="heroText">
+                    <h1 id="home-h">Boat Charters in the Fort Lauderdale, Pompano Beach, and South Florida Areas</h1>
+                    <p>
+                        Custom Boat Charters, Private Boat Charters, Boat Charter Services, and more.
+                    </p>
+                    <a class="button-solid" href="/contact.html" target="_blank" rel="noopener">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/images/landing-m.webp">
+                <source media="(min-width: 601px)" srcset="/images/landing.jpg">
+                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="new home" width="275" height="132">
+             </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <section id="services" class="services">
+            <!-- Get Icons From flaticon.com -->
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" class="svg-icon" decoding="async" src="/images/boat.svg" alt="boat logo" width="48" height="48">
+                </picture>
+                <h2>Book a Charter</h2>
+                <p>
+                    Experience unforgettable days on the water in the Greater Fort Lauderdale area with Yachting Everyday. Whether it's a birthday, anniversary, or bachelor/bachelorette party, book our custom 30' 2020 Sea Chaser Center Console for the perfect day or a few hours of fun.
+                </p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="/images/sail.svg" alt="sail" width="48" height="48">
+                </picture>
+                <h2>Hire a Captain</h2>
+                <p>
+                    Let Yachting Every Day simplify your next trip. Hire our certified 10-ton master captain to navigate your boat while you relax and enjoy. Additionally, we offer boat transportation services to move your vessel between locations hassle-free.
+                </p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="/images/tools.svg" alt="tools" width="48" height="48">
+                </picture>
+                <h2>Yacht Maintenance</h2>
+                <p>
+                    Yachting Every Day ensures your yacht stays in top shape with services like washdowns, detailing, and system checks. Select from our comprehensive offerings for hassle-free yacht care.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Yachting Every Day: Custom 30′ 2020 Sea Chaser Center Console</h2>
+                     <p>
+                        Our custom 30′ 2020 Sea Chaser Center Console offers a spacious and luxurious experience on the water. Equipped with a convenient bathroom (head) for your comfort and an extended sun shade over the entire back of the boat, you can enjoy relief from the South Florida sun. With ample seating provided by chairs and a table for your food and drinks, we ensure your comfort and convenience. Additionally, our boat features a Bluetooth radio system with speakers strategically placed around the boat, providing an immersive and enjoyable listening experience for all
+                     </p>
+                    
+                     <p>
+                        Captain Jesse Fitzpatrick, our USCG certified 100-Ton Master Captain, is known not only for his expertise and professionalism but also for his personable nature and delightful sense of humor. With Captain Fitzpatrick at the helm, you'll experience not just a safe and enjoyable boating excursion but also genuine camaraderie and laughter. His extensive experience, dedication to excellence, and warm personality ensure smooth sailing and unforgettable memories on the water.
+                     </p>
+                     <a class="button-solid" href="/about.html">More About Us</a>
+                </div>
+                <picture class="image-box">
+                     <source media="(max-width: 600px)" srcset="/images/charter-m.jpg">
+                     <source media="(min-width: 601px)" srcset="/images/charter.jpg">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="/images/charter.jpg" alt="satisfied customers" width="400" height="662">
+                 </picture>
+            </div>
+       </section>
+
+        <!-- ============================================ -->
+        <!--          Extra Content For Ranking           -->
+        <!-- ============================================ -->
+
+        <section id="servicesTwo" class="servicesTwo">
+            <!-- Get Icons From flaticon.com -->
+            <div class="card">
+                <span>&#128741;</span>
+                <h2>3 Hour Charter</h2>
+                <h3>$150 Deposit</h3>
+                <p>$450 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+            <div class="card">
+                <span>&#128741;</span>
+                <h2>4 Hour Charter</h2>
+                <h3>$150 Deposit</h3>
+                <p>$600 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+            <div class="card">
+                <span>&#128741;</span>
+                <h2>6 Hour Charter</h2>
+                <h3>$150 Deposit</h3>
+                <p>$900 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+        </section>
+
+
+        <section id="servicesTwo" class="servicesTwo">
+            <!-- Get Icons From flaticon.com -->
+            <div class="card">
+                <span>&#128741;</span>
+                <h2>8 Hour Charter</h2>
+                <h3>$150 Deposit</h3>
+                <p>$1200 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" class="svg-iconTwo" decoding="async" src="/images/sunset.svg" alt="snorkel logo" width="68" height="68">
+                <h2>3 Hour Sunset Cruise</h2>
+                <h3>$150 Deposit</h3>
+                <p>$450 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+            <div class="card">
+                <img aria-hidden="true" class="svg-iconTwo" decoding="async" src="/images/scuba.svg" alt="snorkel logo" width="68" height="68">
+                <h2>3 Hour Snorkel Cruise</h2>
+                <h3>$150 Deposit</h3>
+                <p>$450 Total</p>
+                <a href="/contact.html" class="button-solid">Reserve Your Spot!</a>
+            </div>
+        </section>
+        
+
+        <!-- ============================================ -->
+        <!--             Final Call to Action             -->
+        <!-- ============================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <h2 class="title">Let's Set Sail Together!</h2>
+                <p>
+                    Ready to embark on your next unforgettable boating adventure? Click below to get in touch with us and start planning your dream experience on the water. Whether it's a relaxing day trip or a special celebration, we're here to make it happen. Don't wait, let's make waves together!
+                </p>
+                <a href="/contact.html" class="button-solid">Book Today!</a>
+            </div>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/images/cta-m.jpg">
+                <source media="(min-width: 601px)" srcset="/images/cta.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cta.jpg" alt="kitchen cabinets" width="1920" height="1280">
+             </picture>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logoTwo" href="https://oceansideweb.design/" target="_blank"><img loading="lazy" decoding="async" src="/images/oswd.png" alt="logo" width="250" height="250"></a>
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>Information</h2></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/index.html#servicesTwo">Charters</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li><h2>Services</h2></li>
+                        <li>Intracoastal Cruises</li>
+                        <li>Lighthouse/Inlet<br> Cruises</li>
+                        <li>Sandbar/Swim/<br>Snorkeling Cruises</li>
+                        <li>Specialty Cruises</li>
+                    </ul>
+                    <ul>
+                        <li><h2>Contact</h2></li>
+                        <li><a href="/contact.html">Alsdorf Park Public Boat Launch<br>
+                            2901 NE 14th St<br>
+                            Pompano Beach, FL 33062</a></li>
+                            <li><a href="/contact.html">Sands Harbor Resort & Marina<br>
+                                125 N Riverside Dr<br>
+                                Pompano Beach, FL 33062</a></li>
+                        <li><a href="tel:555-779-4407">T: (954) 994-8951</a></li>
+                        <li><a href="mailto:yachtingeveryday@gmail.com">YachtingEveryDay@gmail.com
+
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>Designed and Hand Coded by</span>
+            <a href="https://oceansideweb.design/" target="_blank" rel="noopener">Oceanside Web Design</a>
+            <span class="copyright"> Copyright 2024 - Present</span></div>
+    </footer>
+
+
+    <script defer src="/nav.js"></script>
+    <script defer src="/dark.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script defer>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+</body>
+</html>
