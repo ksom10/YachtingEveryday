@@ -157,6 +157,7 @@
   #form #contact .input-group:hover input[type="email"],
   #form #contact .input-group:hover input[type="tel"],
   #form #contact .input-group:hover input[type="url"],
+  #form #contact .input-group:hover input[type="date"],
   #form #contact .input-group:hover textarea {
     padding-left: 1.25em;
   }
@@ -164,6 +165,7 @@
   #form #contact .input-group input[type="email"],
   #form #contact .input-group input[type="tel"],
   #form #contact .input-group input[type="url"],
+  #form #contact .input-group input[type="date"],
   #form #contact .input-group textarea {
     border-bottom: none;
     position: relative;
