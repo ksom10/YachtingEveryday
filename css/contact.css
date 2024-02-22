@@ -80,6 +80,7 @@
     background: #1a1a1a;
     padding: 2.8125em 2.125em;
     width: 100%;
+    height: 100%;
     max-width: 18.75em;
     margin: auto;
     border-radius: 0.3125em;
@@ -213,9 +214,9 @@
   }
   #form .contact-right {
     flex-direction: column;
-    max-width: 18.75em;
+    max-width: 25em;
     margin: 0;
-    height: 34.625em;
+    height: 37.5em;
   }
   #form .contact-right .info-group {
     margin-left: 0;
