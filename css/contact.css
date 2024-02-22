@@ -55,6 +55,7 @@
   #form #contact .input-group input[type="email"],
   #form #contact .input-group input[type="tel"],
   #form #contact .input-group input[type="url"],
+  #form #contact .input-group input[type="date"],
   #form #contact .input-group textarea {
     font-size: 1.25em;
     height: 4.1875em;
