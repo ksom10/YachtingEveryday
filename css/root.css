@@ -76,7 +76,7 @@
     margin: 0;
   }
   p {
-    font-size: 1.25em;
+    font-size: 1.375em;
     line-height: 1.5em;
     margin: 0;
   }
@@ -89,7 +89,7 @@
     cursor: pointer;
   }
   .button-solid {
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
