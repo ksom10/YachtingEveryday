@@ -104,7 +104,7 @@
             <div class="left-section">
                 <h2 class="title">Send a Message</h2>
                 <p>If you have any questions or concerns please feel free to reach out to us.  We respond to every call and email.</p>
-                <form id="contact" name="Contact Form2" method="post" data-netlify="true">
+                <form id="contact" name="Contact Form2" action="https://formsubmit.co/yachtingeveryday@gmail.com" method="POST">
                     <input type="hidden" name="form-name" value="Contact Form2">
                         <div class="input-group">
                             <label for="name">Full Name</label>
@@ -215,6 +215,8 @@
             <span class="copyright"> Copyright 2024 - Present</span></div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./contact.js"></script>
     <script defer src="./nav.js"></script>
     <!--
         This script adds a class to the body after scrolling 100px
@@ -231,6 +233,8 @@
             }
         });
     </script>
+
+       
 
 </body>
 </html>
