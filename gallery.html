@@ -35,6 +35,7 @@
 
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/projects.css">
+    
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -101,7 +102,11 @@
         <!--                  Portfolio                   -->
         <!-- ============================================ -->
 
-        <section id="portfolio">
+        <div class="iframe-container">
+            <iframe id="juicer-iframe" src='https://www.juicer.io/api/feeds/yachtingeveryday/iframe' frameborder='0' width='1000' height='1000' style='display:block;margin:0 auto;'></iframe>
+        </div>
+
+        <!-- <section id="portfolio">
             <div class="container" id="instafeed-container">
                 <div class="row">
                     <picture>
@@ -158,9 +163,9 @@
                      </picture>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-         <!-- ============================================ -->
+          <!-- ============================================ -->
         <!--             Final Call to Action             -->
         <!-- ============================================ -->
 
@@ -229,6 +234,7 @@
             <span class="copyright"> Copyright 2024 - Present</span></div>
     </footer>
 
+    
     <script defer src="./nav.js"></script>
     <!--
         This script adds a class to the body after scrolling 100px
@@ -245,17 +251,6 @@
             }
         });
     </script>
-
-        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-        <script type="text/javascript">
-        var userFeed = new Instafeed({
-            get: 'user',
-            target: "instafeed-container",
-            resolution: 'low_resolution',
-            accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
-        });
-        userFeed.run();
-        </script>
 
 </body>
 </html>
