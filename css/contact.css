@@ -256,13 +256,3 @@
   }
 }
 
-.spinner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* adjust as needed */
-}
-
-#loading-spinner {
-  display: none;
-}
