@@ -129,7 +129,40 @@
             }
         }
     }
+
+    #cta {
+        position: relative;
+        padding: 50/16em 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            opacity: .2;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #paypal-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50/16em;
 }
+}}
 
 /* Mobile Landscape */
 @media only screen and (min-width: 568px) {
