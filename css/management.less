@@ -1,0 +1,217 @@
+
+/* Hero */
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #man-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        min-height: 30vh;
+        padding-top: 50/16em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            opacity: .5;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+
+          picture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 64/30em;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            width: 96%;
+            max-width: 500/64em;
+            margin-top: 30/64em;
+            padding-bottom: 64/64em;
+        }
+
+       
+
+        p {
+            color: #fff;
+            text-align: center;
+            max-width: 400/18em;
+            margin: auto;
+            margin-bottom: 30/18em;
+            display: block;
+            width: 96%;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    #man-hero {
+        font-size: 16px;
+
+        h1 {
+            font-size: 64/16em;
+        }
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+    #man-hero {
+        min-height: 300/16em;
+        height: auto;
+        padding-top: 180/16em;
+        padding-block-end: 100/16em;
+        background-attachment: fixed;
+        font-size: inherit;
+
+        #management-h {
+            color: #fff;
+            font-size: 124/30em;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            width: 96%;
+            max-width: 600/64em;
+            margin-top: 30/64em;
+            padding-bottom: 64/64em;
+        }
+    }
+}
+
+
+/* Management */
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #management {
+        padding: 50px 0;
+
+            .container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    font-weight: 900;
+                    font-size: 24/16em;
+                    line-height: 58/48;
+                    color: #000;
+                    position: relative;
+                    margin-bottom: 36/48em;
+                    text-align: center;
+                }
+
+                .accordion-item {
+                    width: 75%; // Set to 100% to take up the entire width
+                    border-bottom: 1px solid black; // Border around the entire accordion item
+                    border: none;
+                    background-color: white;
+                }
+
+
+                .accordion-button {
+                    cursor: pointer;
+                    padding: 18/16em;
+                    width: 100%; // Set to 100% to take up the entire width
+                    text-align: left;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid black; // Underline effect
+                    justify-content: space-between; // Aligns the title and the plus icon on opposite ends
+                    display: flex;
+                    align-items: center;
+                    font-size: 24/16em;
+                    background-color: white;
+                    text-decoration: solid;
+                  
+                    .plus-icon {
+                      margin-left: auto; // Moves the plus icon to the far right
+                    }
+                }
+                
+                .accordion-content {
+                    padding: 0 18/16em;
+                    display: none; // Hidden by default
+                    overflow: hidden;
+                    width: 100%; // Set to 100% to take up the entire width
+                    margin-bottom: 48/16em;
+                }
+            }
+
+
+        }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #management {
+    padding: 100/16em 0;
+
+    .container {
+        .title {
+            font-size: 36/16em;
+        }
+
+        .accordion-item {
+            width: 65%; // Set to 100% to take up the entire width
+        }
+    }
+
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+    #management {
+        padding: 150/16em 0;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-weight: 900;
+                font-size: 56/16em;
+                line-height: 58/48;
+                color: #000;
+                position: relative;
+                margin-bottom: 36/48em;
+                text-align: center;
+            }
+
+            .accordion-item {
+                width: 55%; // Set to 100% to take up the entire width
+                border-bottom: 1px solid black; // Border around the entire accordion item
+                border: none;
+            }
+        }
+    }
+}

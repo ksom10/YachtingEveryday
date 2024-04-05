@@ -1,0 +1,184 @@
+/* Hero */
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #man-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    min-height: 30vh;
+    padding-top: 3.125em;
+  }
+  #man-hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #man-hero picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #man-hero picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #man-hero h1 {
+    color: #fff;
+    font-size: 2.13333333em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 96%;
+    max-width: 7.8125em;
+    margin-top: 0.46875em;
+    padding-bottom: 1em;
+  }
+  #man-hero p {
+    color: #fff;
+    text-align: center;
+    max-width: 22.22222222em;
+    margin: auto;
+    margin-bottom: 1.66666667em;
+    display: block;
+    width: 96%;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #man-hero {
+    font-size: 16px;
+  }
+  #man-hero h1 {
+    font-size: 4em;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+  #man-hero {
+    min-height: 18.75em;
+    height: auto;
+    padding-top: 11.25em;
+    padding-block-end: 6.25em;
+    background-attachment: fixed;
+    font-size: inherit;
+  }
+  #man-hero #management-h {
+    color: #fff;
+    font-size: 4.13333333em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 96%;
+    max-width: 9.375em;
+    margin-top: 0.46875em;
+    padding-bottom: 1em;
+  }
+}
+/* Management */
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #management {
+    padding: 50px 0;
+  }
+  #management .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #management .container .title {
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 1.20833333;
+    color: #000;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #management .container .accordion-item {
+    width: 75%;
+    border-bottom: 1px solid black;
+    border: none;
+    background-color: white;
+  }
+  #management .container .accordion-button {
+    cursor: pointer;
+    padding: 1.125em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: white;
+    text-decoration: solid;
+  }
+  #management .container .accordion-button .plus-icon {
+    margin-left: auto;
+  }
+  #management .container .accordion-content {
+    padding: 0 1.125em;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #management {
+    padding: 6.25em 0;
+  }
+  #management .container .title {
+    font-size: 2.25em;
+  }
+  #management .container .accordion-item {
+    width: 65%;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+  #management {
+    padding: 9.375em 0;
+  }
+  #management .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #management .container .title {
+    font-weight: 900;
+    font-size: 3.5em;
+    line-height: 1.20833333;
+    color: #000;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #management .container .accordion-item {
+    width: 55%;
+    border-bottom: 1px solid black;
+    border: none;
+  }
+}
