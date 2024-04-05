@@ -132,6 +132,7 @@
     font-size: 1.5em;
     background-color: white;
     text-decoration: none;
+    color: #000;
   }
   #management .container .accordion-button .plus-icon {
     margin-left: auto;
